@@ -1,0 +1,174 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f5c1ff;
+  background-image: -webkit-gradient(linear, right top, left top, from(#494399), to(#00cac0));
+  background-image: linear-gradient(to left, #494399, #00cac0);
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar img {
+  width: 5%;
+}
+
+.navbar .navbar-nav {
+  position: relative;
+}
+
+.navbar .navbar-nav li a {
+  position: relative;
+  color: white;
+  margin: 10px;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+  text-decoration: none;
+}
+
+.navbar .navbar-nav li a:hover {
+  color: white;
+}
+
+.navbar .navbar-nav li a:hover::before {
+  width: 100%;
+}
+
+.navbar .navbar-nav li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  width: 0;
+  height: 2px;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+/* Small */
+@media (max-width: 768px) {
+  .navbar img {
+    width: 20%;
+  }
+}
+
+.contact {
+  width: 30%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#494399), to(#72efe9));
+  background-image: linear-gradient(to top, #494399, #72efe9);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 30px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: perspective(2500px) translate3d(0px, 0px, -150px) rotateX(45deg);
+          transform: perspective(2500px) translate3d(0px, 0px, -150px) rotateX(45deg);
+  -webkit-box-shadow: white 3px 3px 6px 0px inset, #ffffff80 -3px -3px 6px 1px inset;
+          box-shadow: white 3px 3px 6px 0px inset, #ffffff80 -3px -3px 6px 1px inset;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+  position: relative;
+}
+
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact form .imgiphone {
+  width: 100%;
+}
+
+.contact form .imgiphone img {
+  width: 12%;
+}
+
+.contact form .form-group label {
+  font-size: 20px;
+  color: white;
+  font-family: monospace;
+  font-weight: 400;
+}
+
+.contact form .form-group input, .contact form .form-group textarea {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.contact form .img {
+  width: 100%;
+}
+
+.contact form .img img {
+  width: 60%;
+  height: 20%;
+  cursor: pointer;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.contact form .img img:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.contact::before {
+  content: "";
+  background-image: -webkit-gradient(linear, right top, left top, from(#494399), to(#72efe9));
+  background-image: linear-gradient(to left, #494399, #72efe9);
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  -webkit-transform: rotateX(-78deg) translateY(11px);
+          transform: rotateX(-78deg) translateY(11px);
+  -webkit-box-shadow: white 3px 3px 6px -20px inset, #ffffff80 0px -3px 6px 1px inset;
+          box-shadow: white 3px 3px 6px -20px inset, #ffffff80 0px -3px 6px 1px inset;
+}
+
+.contact::after {
+  content: "";
+  background-image: -webkit-gradient(linear, left bottom, left top, from(white), to(#ffffff));
+  background-image: linear-gradient(to top, white, #ffffff);
+  position: absolute;
+  bottom: -22px;
+  left: 40%;
+  width: 20%;
+  height: 25px;
+  border-radius: 10px;
+  -webkit-transform: rotateX(113deg) scale(0.8);
+          transform: rotateX(113deg) scale(0.8);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px 10px inset;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px 10px inset;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=contact.css.map */
